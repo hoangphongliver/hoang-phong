@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Store</title>
+        <link rel="stylesheet" href="../CSS/bs.css">
+        <link rel="stylesheet" href="../CSS/chitietsach.css">
+        <link rel="stylesheet" href="../CSS/queries.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="../image/favicon2.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+            <div class="wrapper" id="wrapper">
+
+                    <!-- TOP -->
+                    <div class="top">
+                        <div class="cangiua">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-car-side" style="color: #087b39"></i>
+                                    <a href="#" class="">Miễn phí giao hàng</a></li>
+                                <li>
+                                    <i class="fas fa-torah" style="color: #087b39"></i>
+                                    <a href="#" class="">80.000 tựa sách</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-torah" style="color: #087b39"></i>
+                                    <a href="#" class="">BookStore</a>
+                                </li>
+                            </ul>
+                            <div class="clock">
+                                <p id="clock"></p>
+                                <script>
+                                    document.getElementById("clock").innerHTML = Date();
+                                </script>
+                            </div>
+                        </div>
+                    </div>  <!-- END TOP -->
+        
+        
+                    <!--    HEARER    -->
+                    <header>
+                        <div class="cangiua">
+                            <div class="logo">
+                                <a href="../HTML/BookStore.html">Book<span>Store</span>.com</a>
+                            </div>
+                            <div class="form">
+                                <form action="">
+                                    <input type="text" placeholder="Tìm kiếm tựa sách">
+                                    <a href="#">Tìm kiếm</a>
+                                    
+                                    <img src="../image/search1.png" alt=""> 
+                                </form>
+                            </div>
+                            <div class="cart"><a href="#"><i class="fas fa-cart-plus"></i></a></div>
+                            <div class="login">
+                                <ul>
+                                    <li><a href="#" class="" id="dangky" onclick="onClickbtn1()">Đăng Ký</a></li>
+                                    <li><a href="#" class="" id="dangnhap" onclick="onClickbtn()" >Đăng Nhập
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>   <!--   END HEARER    -->
+        
+        
+                    <!--    NAVIGATION MENU    -->
+                    <nav>
+                        <div class="cangiua">
+                            <div class="danhmuc">
+                                    <i class="fas fa-bars"></i>
+                                <!--<a href="#"><img src="../image/menu.png" alt=""></a>-->
+                            </div>
+                            <div class="danhmucsach">
+                                    <a href="#">Danh mục sách</a>
+                                    <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="lienhe">
+                                <ul>
+                                    <li class="lienhe1">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <a href="#">Hotline: 0985612351
+                                                <div class="hotline">
+                                                    <p>Mọi chi tiết xin liên hệ tới số Hotline: 0985612351 </br>
+                                                        Hoạt động tất cả các ngày trong Tuần </br>
+                                                        Thời gian: 8h - 22h</p>
+                                                </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-comments"></i>
+                                        <a href="#">Hỗ trợ trực tuyến</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>    <!--  END NAVIGATION MENU    -->
+
+                    <!--  CHI TIẾT SÁCH -->
+                    <section>
+                        <div class="cangiua">
+                            <div class="chitietsach">
+                                Chi Tiết Sách
+                            </div>
+                        </div>
+                    </section>  <!--  END CHI TIẾT SÁCH  -->
+
+
+                    
+            <!-- NHAN THONG BAO  -->
+            <div class="nhanthongbao clear">
+                    <div class="cangiua">
+                        <div class="nhangmail">
+                                <div>
+                                    <p id="p14">ĐĂNG KÝ GMAIL</p>
+                                    <p id="p15">Nhận thông tin sách mới</p>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Tên của bạn">
+                                    <input type="text" placeholder="Gmail của bạn">
+                                    <select name="" id="" aria-placeholder="Thể loại bạn thích">
+                                        <option value="">Sách Khoa Học</option>
+                                        <option value="">Sách BlockChain</option>
+                                        <option value="">Sách Thiếu Nhi</option>
+                                        <option value="">Sách Kinh Tế</option>
+                                        <option value="">Sách Đời Sống</option>
+                                        <option value="">Sách Đời Sống</option>
+                                        <option value="">Sách Đời Sống</option>
+                                        <option value="">Sách Đời Sống</option>
+                                    </select>
+                                </div>
+                                <div id="a20"><a href="#">ĐĂNG KÝ NGAY</a></div>
+                        </div>
+                    </div>
+                </div>   <!-- END NHAN THONG BAO  -->
+    
+    
+                <!-- FOOTER -->
+                <footer class="clear">
+                    <div class="cangiua">
+                        <div class="footer">
+                            <div class="about mg">
+                                <p>GIỚI THIỆU</p>
+                                <ul>
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                    <li><a href="#">Tác giả nổi bật</a></li>
+                                    <li><a href="#">Tác giả nổi bật</a></li>
+                                    <li><a href="#">Tác giả nổi bật</a></li>
+                                    <li><a href="#">Cam kết</a></li>
+                                </ul>
+                            </div>
+                            <div class="chinhsach mg">
+                                <p>CHÍNH SÁCH</p>
+                                <ul>
+                                    <li><a href="#">Sửa đơn hàng</a></li>
+                                    <li><a href="#">Hủy đơn hàng</a></li>
+                                    <li><a href="#">Đổi/Trả hàng</a></li>
+                                    <li><a href="#">Hoàn tiền</a></li>
+                                    <li><a href="#">Vận chuyển</a></li>
+                                    <li><a href="#">Xuất hóa đơn</a></li>
+                                    <li><a href="#">Bỏa mật thông tin</a></li>
+                                </ul>
+                            </div>
+                            <div class="thanhtoan mg">
+                                <p>ĐỐI TÁC</p>
+                                <ul>
+                                    <li><img src="../image/lazada.png" alt=""></li>
+                                    <li><img src="../image/tiki.png" alt=""></li>
+                                    <li><img src="../image/shoppe.png" alt=""></li>
+                                    <li><img src="../image/amazon.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="doitac mg">
+                                <p>THANH TOÁN</p>
+                                <ul>
+                                    <li><i class="fab fa-youtube" style="color: red"></i></li>
+                                    <li><i class="fab fa-amazon" style="color: green"></i></li>
+                                    <li><i class="fab fa-youtube" style="color: red"></i></li>
+                                    <li><i class="fab fa-amazon" style="color: green"></i></li>
+                                    <li><i class="fab fa-youtube" style="color: red"></i></li>
+                                </ul>
+                            </div>
+                            <!--  MAP-->
+                            <div class="map mg">
+                                <p>BẢN ĐỒ LIÊN HỆ</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.5932172226303!2d105.
+                                7863677713446!3d20.980522296300926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!
+                                2zSOG7jWMgdmnhu4duIGLGsHUgY2jDrW5oIHZp4buFbiB0aMO0bmcgUHRpdA!5e0!3m2!1svi!2s!4v1533052620774"
+                                width="280" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>                                
+                            </div>  <!-- END MAP-->
+                        </div>
+                    </div>
+                </footer>    <!--    END FOOTER   -->
+    
+                <div class="footer_bottom clear">
+                    <p>DESIGN BY HOÀNG PHONG</p>
+                </div>
+
+            </div>
+    </body>
+</html>

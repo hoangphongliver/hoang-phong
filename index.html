@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Store</title>
+        <link rel="stylesheet" href="CSS/bs.css">
+        <link rel="stylesheet" href="CSS/queries.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="image/favicon2.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="wrapper" id="wrapper">
+
+            <!-- TOP -->
+            <div class="top">
+                <div class="cangiua">
+                    <ul>
+                        <li>
+                            <i class="fas fa-car-side" style="color: #087b39"></i>
+                            <a href="#" class="">Miễn phí giao hàng</a></li>
+                        <li>
+                            <i class="fas fa-torah" style="color: #087b39"></i>
+                            <a href="#" class="">80.000 tựa sách</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-torah" style="color: #087b39"></i>
+                            <a href="#" class="">BookStore</a>
+                        </li>
+                    </ul>
+                    <div class="clock">
+                        <p id="clock"></p>
+                        <script>
+                            document.getElementById("clock").innerHTML = Date();
+                        </script>
+                    </div>
+                </div>
+            </div>  <!-- END TOP -->
+
+
+            <!--    HEARER    -->
+            <header>
+                <div class="cangiua">
+                    <div class="logo">
+                        <a href="../HTML/BookStore.html">Book<span>Store</span>.com</a>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Tìm kiếm tựa sách">
+                            <a href="#">Tìm kiếm</a>
+                            
+                            <img src="image/search1.png" alt=""> 
+                        </form>
+                    </div>
+                    <div class="cart"><a href="#"><i class="fas fa-cart-plus"></i></a></div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="#" class="" id="dangky" onclick="onClickbtn1()">Đăng Ký</a></li>
+                            <li><a href="#" class="" id="dangnhap" onclick="onClickbtn()" >Đăng Nhập
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>   <!--   END HEARER    -->
+
+
+            <!--    NAVIGATION MENU    -->
+            <nav>
+                <div class="cangiua">
+                    <div class="danhmuc">
+                            <i class="fas fa-bars"></i>
+                        <!--<a href="#"><img src="../image/menu.png" alt=""></a>-->
+                    </div>
+                    <div class="danhmucsach">
+                            <a href="#">Danh mục sách</a>
+                            <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="lienhe">
+                        <ul>
+                            <li class="lienhe1">
+                                <i class="fas fa-phone-volume"></i>
+                                <a href="#">Hotline: 0985612351
+                                        <div class="hotline">
+                                            <p>Mọi chi tiết xin liên hệ tới số Hotline: 0985612351 </br>
+                                                Hoạt động tất cả các ngày trong Tuần </br>
+                                                Thời gian: 8h - 22h</p>
+                                        </div>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-comments"></i>
+                                <a href="#">Hỗ trợ trực tuyến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    <!--  END NAVIGATION MENU    -->
+
+
+
+            <!--    DANH MỤC SÁCH    -->
+            <section>
+                <div class="cangiua">
+                    <div class="danhmucall">
+                        <div class="danhmucleft">
+                            <ul>
+                                <li><a href="#">Sách Bán Chạy
+                                    <div class="nav_con">
+                                        <ul> 
+                                            <p>Sách Trong Nước</p>
+                                            <li><a href="#">Tin Học Cơ Sở 1</a></li>
+                                            <li><a href="#">Sách Mới Phát Hành</a></li>
+                                            <li><a href="#">Jeannette Walls</a></li>
+                                            <li><a href="#">Sách Toán Học</a></li>
+                                            <li><a href="#">Toán Tin Học</a></li>
+                                            <li><a href="#">Toán Sử Học</a></li>
+                                            <li><a href="#">Toán Vật Lý</a></li>
+                                            <li><a href="#">Toán Cao Cấp</a></li>
+                                            <li><a href="#">Cấu Trúc Dữ Liệu</a></li>
+                                            <li><a href="#">Ngôn Ngữ Lập Trình C++</a></li>
+                                            <li><a href="#">Lý Thuyết Thông Tin</a></li>
+                                        </ul>
+                                        <ul> 
+                                            <p>Sách Nước Ngoài</p>
+                                            <li><a href="#">Kiến Trúc Và Thiết Kế Phần Mềm</a></li>
+                                            <li><a href="#">Sách Phiêu Lưu</a></li>
+                                            <li><a href="#">Sách Mới Phát Hành</a></li>
+                                            <li><a href="#">Tiểu Thuyết</a></li>
+                                            <li><a href="#">Toán Rời Rạc</a></li>
+                                            <li><a href="#">Phân Tích Thiết Kế </a></li>
+                                            <li><a href="#">Hệ Điều Hành</a></li>
+                                            <li><a href="#">Kiến Trúc Máy Tính</a></li>
+                                            <li><a href="#">Lập Trình Hướng Đối Tượng</a></li>
+                                        </ul>
+                                        <ul> 
+                                            <p>Tác Giả</p>
+                                            <li><a href="#">Sách Mới Phát Hành</a></li>
+                                            <li><a href="#">John Steinbeck</a></li>
+                                            <li><a href="#">Ken Kesey</a></li>
+                                            <li><a href="#">Ernest Hemingway</a></li>
+                                            <li><a href="#">Stephen King</a></li>
+                                            <li><a href="#">F. Scott Fitzgerald</a></li>
+                                            <li><a href="#">William Faulkner</a></li>
+                                            <li><a href="#">Mark Twain</a></li>
+                                            <li><a href="#">Nicholas Sparks</a></li>
+                                            <li><a href="#">Nguyễn Mạnh Hùng</a></li>
+                                            <li><a href="#">Nguyễn Mạnh Sơn</a></li>
+                                            <li><a href="#">Nguyễn Xuân Anh</a></li>
+                                        </ul>
+                                        <div class="nav_img">
+                                            <img src="image/book20.png" alt="">
+                                            <img src="image/book6.png" alt="">
+                                            <img src="image/book7.png" alt="">
+                                            <img src="image/book23.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </a></li>
+                                <li><a href="#">Sách Mới Phát Hành</a></li>
+                                <li><a href="#">Sách Sắp Phát Hành</a></li>
+                                <li><a href="#">Sách Ngoại Văn</a></li>
+                                <li><a href="#">Sách BlockChain</a></li>
+                                <li><a href="#">Sách Kinh Tế</a></li>
+                                <li><a href="#">Sách Văn Học Trong Nước</a></li>
+                                <li><a href="#">Sách Văn Học Nước Ngoài</a></li>
+                                <li><a href="#">Thường Thức - Đời Sống</a></li>
+                                <li><a href="#">Sách Thiếu Nhi
+                                        <div class="nav_con">
+                                            <ul> 
+                                                <p>Sách Trong Nước</p>
+                                                <li><a href="#">Tin Học Cơ Sở 1</a></li>
+                                                <li><a href="#">Sách Mới Phát Hành</a></li>
+                                                <li><a href="#">Jeannette Walls</a></li>
+                                                <li><a href="#">Sách Toán Học</a></li>
+                                                <li><a href="#">Toán Tin Học</a></li>
+                                                <li><a href="#">Toán Sử Học</a></li>
+                                                <li><a href="#">Toán Vật Lý</a></li>
+                                                <li><a href="#">Toán Cao Cấp</a></li>
+                                                <li><a href="#">Cấu Trúc Dữ Liệu</a></li>
+                                                <li><a href="#">Ngôn Ngữ Lập Trình C++</a></li>
+                                                <li><a href="#">Lý Thuyết Thông Tin</a></li>
+                                            </ul>
+                                            <ul> 
+                                                <p>Sách Nước Ngoài</p>
+                                                <li><a href="#">Kiến Trúc Và Thiết Kế Phần Mềm</a></li>
+                                                <li><a href="#">Sách Phiêu Lưu</a></li>
+                                                <li><a href="#">Sách Mới Phát Hành</a></li>
+                                                <li><a href="#">Tiểu Thuyết</a></li>
+                                                <li><a href="#">Toán Rời Rạc</a></li>
+                                                <li><a href="#">Phân Tích Thiết Kế </a></li>
+                                                <li><a href="#">Hệ Điều Hành</a></li>
+                                                <li><a href="#">Kiến Trúc Máy Tính</a></li>
+                                                <li><a href="#">Lập Trình Hướng Đối Tượng</a></li>
+                                            </ul>
+                                            <ul> 
+                                                <p>Tác Giả</p>
+                                                <li><a href="#">Sách Mới Phát Hành</a></li>
+                                                <li><a href="#">John Steinbeck</a></li>
+                                                <li><a href="#">Ken Kesey</a></li>
+                                                <li><a href="#">Ernest Hemingway</a></li>
+                                                <li><a href="#">Stephen King</a></li>
+                                                <li><a href="#">F. Scott Fitzgerald</a></li>
+                                                <li><a href="#">William Faulkner</a></li>
+                                                <li><a href="#">Mark Twain</a></li>
+                                                <li><a href="#">Nicholas Sparks</a></li>
+                                                <li><a href="#">Nguyễn Mạnh Hùng</a></li>
+                                                <li><a href="#">Nguyễn Mạnh Sơn</a></li>
+                                                <li><a href="#">Nguyễn Xuân Anh</a></li>
+                                            </ul>
+                                            <div class="nav_img">
+                                                <img src="image/book20.png" alt="">
+                                                <img src="image/book6.png" alt="">
+                                                <img src="image/book7.png" alt="">
+                                                <img src="image/book23.png" alt="">
+                                            </div>
+        
+                                        </div>
+                                </a></li>
+                                <li><a href="#">Sách Phát Triển Bản Thân</a></li>
+                                <li><a href="#">Sách Tin Học - Ngoại Ngữ</a></li>
+                                <li><a href="#">Sách Chuyên Ngành</a></li>
+                                <li><a href="#">Sách Giáo Khoa - Giáo Trình</a></li>
+                                <li><a href="#">Tạp Chí - Văn Phòng Phẩm</a></li>
+                            </ul>
+                        </div>
+                        <div class="danhmucimages">
+                            <div class="slideshow">
+                                <a href="#" id="next"><i class="fas fa-angle-right"></i></a>
+                                <a href="#" id="prev"><i class="fas fa-angle-left"></i></a>
+                                <img class="slide" src="image/book20.png"  stt="0"></a>
+                                <img class="slide s1" src="image/book1.png"   stt="1">
+                                <img class="slide s1" src="image/book22.png"  stt="2">
+                                <img class="slide s1" src="image/book23.png"  stt="3">
+                            </div>
+                            <div class="danhmucimages_bottom">
+                                <a href="#"><img id="book4" src="image/book4.png" alt=""></a>
+                                <a href="#"><img id="book3" src="image/book3.png" alt=""></a>
+                                <a href="#"><img id="book5" src="image/book5.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  <!--  END DANH MỤC SÁCH    -->
+
+
+
+            <!--    CONTENT    -->
+            <section>
+                <div class="cangiua">
+                    <div class="content clear">
+
+                        <!--   CONTENT LEFT    -->
+                        <div class="content_left">
+
+
+                            <!--   CONTENT LEFT STĐ -->
+                            <div class="std">
+                                <h3>Sách Tiêu Điểm</h3>
+                                <a href="#">Xem Thêm</a>
+                            </div>
+                            <div class="infoSTD">
+                                <div class="hinhsach"><a href="#"><img src="https://vnwriter.net/wp-content/uploads/2016/09/sach-chuyen-ke-trang-nghe.gif" alt=""></a></div>
+                                <div class="infosach">
+                                    <h1>Chuyện Kể Trăng Nghe</h1>
+                                    <span>Shin Kyung Wook</span>
+                                    <p>Bận rộn. Vội vàng. Áp lực. Mong muốn nối tiếp kỳ vọng. 
+                                       Kế hoạch này tiếp nối dự án nọ... Căng thẳng. Stress. 
+                                       Đó là những gì đang diễn ra với cuộc sống của chúng ta.
+                                       Bận rộn. Vội vàng. Áp lực. Mong muốn nối tiếp kỳ vọng. 
+                                       Kế hoạch này tiếp nối dự án nọ... Căng thẳng. Stress. 
+                                       Đó là những gì đang diễn ra với cuộc sống của chúng ta.
+                                       Kế hoạch này tiếp nối dự án nọ... Căng thẳng. Stress. 
+                                       Đó là những gì đang diễn ra với cuộc sống của chúng ta.
+                                    </p>
+                                    <ul>
+                                        <li><span>-15%</span></li>
+                                        <li id="li2">299.000đ</li>
+                                        <li>254.000đ</li>
+                                        <li><a href="../HTML/infosach.html">Mua Ngay</a></li>
+                                    </ul>
+                                </div>
+                            </div>  <!-- END  CONTENT LEFT STĐ -->
+
+
+                            <!--   CONTENT LEFT SBC -->
+                            <div class="sbc">
+                                <h3 id="h31">Sách Bán Chạy Nhất Năm</h3>
+                                <a href="#">Xem Thêm</a>
+                            </div>
+                            <div class="sbcnhatnam">
+                                <div class="sbcl">
+                                    <div class="imgsach">
+                                        <img src="https://vnwriter.net/wp-content/uploads/2017/01/sach-vo-cung-tan-nhan.jpg" alt="">
+                                        <li><a href="#">-20%</a></li>
+                                    </div>
+                                    <div class="motasach">
+                                        <h4><a href="../HTML/infosach.html">Tàn Nhẫn - Yêu Thương</a></h4>
+                                        <p id="p1"><a href="#">Walter David</a></p>
+                                        <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                        <ul>
+                                            <li><a href="#">105.000đ</a></li>
+                                            <li><a id="a1" href="#">80.000đ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sbcl ">
+                                        <div class="imgsach">
+                                            <img src="https://cafebiz.cafebizcdn.vn/thumb_w/640/2018/3/6/efb0c0bff415c905726fc5a05cc3d7f3-15203096810152010929663.jpg" alt="">
+                                            <li><a href="#">-20%</a></li>
+                                        </div>
+                                        <div class="motasach">
+                                            <h4><a href="#">Đi Tìm Lẽ Sống</a></h4>
+                                            <p id="p1"><a href="#">Walter David</a></p>
+                                            <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                            <ul>
+                                                <li><a href="#">95.000đ</a></li>
+                                                <li><a id="a1" href="#">70.000đ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="sbcl ">
+                                            <div class="imgsach">
+                                                <img src="https://vnwriter.net/wp-content/uploads/2017/10/sach-neu-chi-con-mot-ngay-de-song.jpg" alt="">
+                                                <li><a href="#">-20%</a></li>
+                                            </div>
+                                            <div class="motasach">
+                                                <h4><a href="#">Nếu Chỉ Còn Một Ngày Để Sống</a></h4>
+                                                <p id="p1"><a href="#">Walter David</a></p>
+                                                <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                                <ul>
+                                                    <li><a href="#">65.000đ</a></li>
+                                                    <li><a id="a1" href="#">190.000đ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="sbcl">
+                                                <div class="imgsach">
+                                                    <img src="https://newshop.vn/public/uploads/products/11857/thuong-nhau-de-do-tai-ban-co-bo-sung-tang-kem-dia-nhac.gif" alt="">
+                                                    <li><a href="#">-20%</a></li>
+                                                </div>
+                                                <div class="motasach">
+                                                    <h4><a href="#">Thương Nhau Để Đó</a></h4>
+                                                    <p id="p1"><a href="#">Walter David</a></p>
+                                                    <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                                    <ul>
+                                                        <li><a href="#">125.000đ</a></li>
+                                                        <li><a id="a1" href="#">80.000đ</a></li>
+                                                    </ul>
+                                                </div>
+                                         </div>
+
+                                         <div class="sbcl">
+                                            <div class="imgsach">
+                                                <img src="https://cafebiz.cafebizcdn.vn/thumb_w/640/2018/soithaonguyenhermannhesse-1516674840515.jpg" alt="">
+                                                <li><a href="#">-20%</a></li>
+                                            </div>
+                                            <div class="motasach">
+                                                <h4><a href="#">Sói Thảo Nguyên</a></h4>
+                                                <p id="p1"><a href="#">Walter David</a></p>
+                                                <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                                <ul>
+                                                    <li><a href="#">75.000đ</a></li>
+                                                    <li><a id="a1" href="#">90.000đ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    <div class="sbcl">
+                                        <div class="imgsach">
+                                            <img src="https://vnwriter.net/wp-content/uploads/2017/08/sach-hoa-hong-xu-khac.jpg" alt="">
+                                            <li><a href="#">-20%</a></li>
+                                        </div>
+                                        <div class="motasach">
+                                            <h4><a href="#">Hoa Vàng Xứ Khác</a></h4>
+                                            <p id="p1"><a href="#">Walter David</a></p>
+                                            <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                            <ul>
+                                                <li><a href="#">75.000đ</a></li>
+                                                <li><a id="a1" href="#">90.000đ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                            </div>   <!--  END CONTENT LEFT SBC -->
+
+
+
+                            <!-- CONTENT LEFT SÁCH MỚI NHẤT-->
+                            <div class="smn">
+                                <h3>Sách Mới Nhất</h3>
+                                <a href="#">Xem Thêm</a>
+                            </div>
+                            <div class="sbcnhatnam">
+                                <div class="sbcl">
+                                        <div class="imgsach">
+                                            <img src="http://cafefcdn.com/2017/photo-1-1501496971180.jpg" alt="">
+                                            <li><a href="#">-20%</a></li>
+                                        </div>
+                                        <div class="motasach">
+                                            <h4><a href="#">Chia Sẻ Chiếc Nhẫn</a></h4>
+                                            <p id="p1"><a href="#">Walter David</a></p>
+                                            <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                            <ul>
+                                                <li><a href="#">75.000đ</a></li>
+                                                <li><a id="a1" href="#">90.000đ</a></li>
+                                            </ul>
+                                        </div>
+                                </div>
+
+                                <div class="sbcl">
+                                        <div class="imgsach">
+                                            <img src="https://znews-photo.zadn.vn/w660/Uploaded/neg_esfszlt/2018_08_26/bookskim684e4fe2a0a511e893e324d1703d2a7a780x1208.jpg" alt="">
+                                            <li><a href="#">-20%</a></li>
+                                        </div>
+                                        <div class="motasach">
+                                            <h4><a href="#">What We Were Promises</a></h4>
+                                            <p id="p1"><a href="#">Walter David</a></p>
+                                            <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng......</a></p>
+                                            <ul>
+                                                <li><a href="#">75.000đ</a></li>
+                                                <li><a id="a1" href="#">90.000đ</a></li>
+                                            </ul>
+                                        </div>
+                                </div>
+
+                                <div class="sbcl">
+                                        <div class="imgsach">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Pieds_Nickeles_5.jpg/220px-Pieds_Nickeles_5.jpg" alt="">
+                                            <li><a href="#">-20%</a></li>
+                                        </div>
+                                        <div class="motasach">
+                                            <h4><a href="#">One Piece</a></h4>
+                                            <p id="p1"><a href="#">Walter David</a></p>
+                                            <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng......</a></p>
+                                            <ul>
+                                                <li><a href="#">75.000đ</a></li>
+                                                <li><a id="a1" href="#">90.000đ</a></li>
+                                            </ul>
+                                        </div>
+                                </div>
+
+                                <div class="sbcl">
+                                    <div class="imgsach">
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/41ybG235TcL._SX329_BO1,204,203,200_.jpg" alt="">
+                                        <li><a href="#">-20%</a></li>
+                                    </div>
+                                    <div class="motasach">
+                                        <h4><a href="#">Leonardo Da Vinci</a></h4>
+                                        <p id="p1"><a href="#">Walter David</a></p>
+                                        <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng......</a></p>
+                                        <ul>
+                                            <li><a href="#">75.000đ</a></li>
+                                            <li><a id="a1" href="#">90.000đ</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+
+                                <div class="sbcl">
+                                    <div class="imgsach">
+                                        <img src="https://nguvan.vn/wp-content/uploads/2018/08/sach-hay-ve-chau-a-astonishingcolor-680x1024.jpeg" alt="">
+                                        <li><a href="#">-20%</a></li>
+                                    </div>
+                                    <div class="motasach">
+                                        <h4><a href="#">Leonardo Da Vinci</a></h4>
+                                        <p id="p1"><a href="#">Walter David</a></p>
+                                        <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng.......</a></p>
+                                        <ul>
+                                            <li><a href="#">75.000đ</a></li>
+                                            <li><a id="a1" href="#">90.000đ</a></li>
+                                        </ul>
+                                    </div>
+                               </div>
+
+                                <div class="sbcl">
+                                    <div class="imgsach">
+                                        <img src="https://www.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_81136.jpg" alt="">
+                                        <li><a href="#">-20%</a></li>
+                                    </div>
+                                    <div class="motasach">
+                                        <h4><a href="#">The Magic</a></h4>
+                                        <p id="p1"><a href="#">Walter David</a></p>
+                                        <p id="p2"><a href="#">Ông là thiên tài sáng tạo nhất trong lịch sử. Ông có thể truyền lại cho chúng......</a></p>
+                                        <ul>
+                                            <li><a href="#">75.000đ</a></li>
+                                            <li><a id="a1" href="#">90.000đ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div> <!--END CONTENT SÁCH MỚI NHẤT-->
+
+  
+                            <!--     TÁC GIẢ NỔI BẬT      -->
+
+                            <h3>Tác Giả Nổi Bật</h3>
+                            <div class="tacgianoibat">
+                                <div class="anhtacgia"><img src="https://cdn02.static-adayroi.com/0/2017/09/11/1505117993897_6735223.jpg" alt=""></div>
+                                <div class="infotacgia">
+                                    <h4>Hoàng Phong</h4>
+                                    <span>Thích Nhất Hạnh là một thiền sư, giảng viên, nhà văn, nhà thơ, 
+                                        nhà khảo cứu, nhà hoạt động xã hội, và người vận động cho hòa bình. 
+                                        Ông sinh ra ở Thừa Thiên Huế vào ngày 11/10/1926 xuất gia theo Thiền
+                                        Tông năm 16 tuổi, trở thành một nhà sư vào năm 1949. Ông là nhà lãnh
+                                        đạo Phật giáo có ảnh hưởng lớn thứ hai ở phương Tây chỉ sau Đạt lại Lạt ma
+                                        Tông năm 16 tuổi, trở thành một nhà sư vào năm 1949. Ông là nhà lãnh
+                                        đạo Phật giáo có ảnh hưởng lớn thứ hai ở phương Tây chỉ sau Đạt.
+                                    </span>
+                                    <p><a href="#">Xem thêm</a></p>
+                                </div>
+                            </div>   <!--   END TÁC GIẢ NỔI BẬT      -->
+
+                            <!--     REVIEW SÁCH     -->
+
+                            <h3 id="review">Review Sách Hay</h3>
+                            <div class="reviewsach">
+                                <div class="video">
+                                        <iframe width="400" height="315" src="https://www.youtube.com/embed/ps87e2CWsio" 
+                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                         allowfullscreen></iframe>
+                                </div>
+                                <div class="review">
+                                    <p id="p10">Leonardo Da Vinci</p>
+                                    <span>Hoàng Phong</span>
+                                    <p id="p12">
+                                        Thích Nhất Hạnh là một thiền sư, giảng viên, nhà văn, nhà thơ, 
+                                        nhà khảo cứu, nhà hoạt động xã hội, và người vận động cho hòa bình. 
+                                        Ông sinh ra ở Thừa Thiên Huế vào ngày 11/10/1926 xuất gia theo Thiền
+                                        Tông năm 16 tuổi, trở thành một nhà sư vào năm 1949. Ông là nhà lãnh
+                                        đạo Phật giáo có ảnh hưởng lớn thứ hai ở phương Tây chỉ sau Đạt lại Lạt ma
+                                        Tông năm 16 tuổi, trở thành một nhà sư vào năm 1949. Ông là nhà lãnh
+                                        đạo Phật giáo có ảnh hưởng lớn thứ hai ở phương Tây chỉ sau Đạt.Ông là nhà lãnh
+                                        đạo Phật giáo có ảnh hưởng lớn thứ hai ở phương Tây chỉ sau Đạt.
+                                       </p>
+                                    <ul>
+                                        <li>789.000đ</li>
+                                        <li>553.000đ</li>
+                                        <li><a href="#">Mua Ngay</a></li>
+                                    </ul>
+                                </div>
+                            </div>   <!--   END  REVIEW SÁCH     -->
+                        </div>
+
+                        <!--   CONTENT RIGHT    -->
+                        <div class="content_right">
+                            <h3>Sách Bán Chạy Trong Tuần</h3>
+
+
+                            <!--   CONTENT RIGHT ALL BOOK BC   -->
+                           <div class="allsachbanchay">
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/dac-nhan-tam.jpg" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Đắc Nhân Tâm</a>
+                                            <p>45.000đ</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/book1.png" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Đẹp - Số 240 (Tháng 1/2019)</a>
+                                            <p>100.000đ</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/book2.png" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Ôm Mỏ Neo Nằm Mộng Những Chân Trời</a>
+                                            <p>212.000₫</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                            <p>90.000đ</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/book4.png" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Vừa Du Lịch Vừa Tìm Kiếm</a>
+                                            <p>75.000đ</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/book5.png" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Phương Thức Amazon</a>
+                                            <p>450.000đ</p>
+                                        </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                        <div class="anhsachr"><a href="#"><img src="image/dac-nhan-tam.jpg" alt=""></a></div>
+                                        <div class="infosachr">
+                                            <a href="#">Tái Tạo Tìm Kiếm</a>
+                                            <p>150.000đ</p>
+                                        </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book4.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Vừa Du Lịch Vừa Tìm Kiếm</a>
+                                        <p>75.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+                            </div>     <!--  END CONTENT RIGHT ALL BOOK BC   -->
+
+                            <!--  FB -->
+                            <div class="fb">
+                                    <h3>FANPAGE</h3>
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTrenDuongPitch%2F%3F__tn__%3D%252Cd%252CP-
+                                    R%26eid%3DARBMazHhPHSpsr6b92PDeGa-5ZlZHsjbuEkLvVA_zysVoRUL81N4xdoa5-i1swwpSUXrqSR8MJVTfHxi&tabs=timeline&width=280&height=450&small_header
+                                    =false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=170803640303814" width="280" 
+                                    height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>  <!--END FB-->
+
+
+                            <!-- TOP TÌM KIẾM-->
+                            <h3>TOP TÌM KIẾM</h3>
+                            <div class="allsachbanchay">
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book4.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Vừa Du Lịch Vừa Tìm Kiếm</a>
+                                        <p>75.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/dac-nhan-tam.jpg" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Tái Tạo Tìm Kiếm</a>
+                                        <p>150.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="sachbanchay">
+                                    <div class="anhsachr"><a href="#"><img src="image/book3.png" alt=""></a></div>
+                                    <div class="infosachr">
+                                        <a href="#">Chỉ Cần Tin Là Mình Duy Nhất</a>
+                                        <p>90.000đ</p>
+                                    </div>
+                                </div>
+                            </div>  <!-- END TOP TIM KIEM-->
+    
+
+                            <div class="quangcao">
+                                <img src="image/book11.png" alt="">
+                            </div>
+                        <!-- END CONTENT RIGHT-->
+
+                        </div>
+                    </div>
+                </div>
+            </section>    <!--   END CONTENT    -->
+
+
+            <!-- NHAN THONG BAO  -->
+            <div class="nhanthongbao clear">
+                <div class="cangiua">
+                    <div class="nhangmail">
+                            <div>
+                                <p id="p14">ĐĂNG KÝ GMAIL</p>
+                                <p id="p15">Nhận thông tin sách mới</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Tên của bạn">
+                                <input type="text" placeholder="Gmail của bạn">
+                                <select name="" id="" aria-placeholder="Thể loại bạn thích">
+                                    <option value="">Sách Khoa Học</option>
+                                    <option value="">Sách BlockChain</option>
+                                    <option value="">Sách Thiếu Nhi</option>
+                                    <option value="">Sách Kinh Tế</option>
+                                    <option value="">Sách Đời Sống</option>
+                                    <option value="">Sách Đời Sống</option>
+                                    <option value="">Sách Đời Sống</option>
+                                    <option value="">Sách Đời Sống</option>
+                                </select>
+                            </div>
+                            <div id="a20"><a href="#">ĐĂNG KÝ NGAY</a></div>
+                    </div>
+                </div>
+            </div>   <!-- END NHAN THONG BAO  -->
+
+
+            <!-- FOOTER -->
+            <footer class="clear">
+                <div class="cangiua">
+                    <div class="footer">
+                        <div class="about mg">
+                            <p>GIỚI THIỆU</p>
+                            <ul>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Điều khoản sử dụng</a></li>
+                                <li><a href="#">Hướng dẫn thanh toán</a></li>
+                                <li><a href="#">Tác giả nổi bật</a></li>
+                                <li><a href="#">Tác giả nổi bật</a></li>
+                                <li><a href="#">Tác giả nổi bật</a></li>
+                                <li><a href="#">Cam kết</a></li>
+                            </ul>
+                        </div>
+                        <div class="chinhsach mg">
+                            <p>CHÍNH SÁCH</p>
+                            <ul>
+                                <li><a href="#">Sửa đơn hàng</a></li>
+                                <li><a href="#">Hủy đơn hàng</a></li>
+                                <li><a href="#">Đổi/Trả hàng</a></li>
+                                <li><a href="#">Hoàn tiền</a></li>
+                                <li><a href="#">Vận chuyển</a></li>
+                                <li><a href="#">Xuất hóa đơn</a></li>
+                                <li><a href="#">Bỏa mật thông tin</a></li>
+                            </ul>
+                        </div>
+                        <div class="thanhtoan mg">
+                            <p>ĐỐI TÁC</p>
+                            <ul>
+                                <li><img src="image/lazada.png" alt=""></li>
+                                <li><img src="image/tiki.png" alt=""></li>
+                                <li><img src="image/shoppe.png" alt=""></li>
+                                <li><img src="image/amazon.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="doitac mg">
+                            <p>THANH TOÁN</p>
+                            <ul>
+                                <li><i class="fab fa-youtube" style="color: red"></i></li>
+                                <li><i class="fab fa-amazon" style="color: green"></i></li>
+                                <li><i class="fab fa-youtube" style="color: red"></i></li>
+                                <li><i class="fab fa-amazon" style="color: green"></i></li>
+                                <li><i class="fab fa-youtube" style="color: red"></i></li>
+                            </ul>
+                        </div>
+                        <!--  MAP-->
+                        <div class="map mg">
+                            <p>BẢN ĐỒ LIÊN HỆ</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.5932172226303!2d105.
+                            7863677713446!3d20.980522296300926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!
+                            2zSOG7jWMgdmnhu4duIGLGsHUgY2jDrW5oIHZp4buFbiB0aMO0bmcgUHRpdA!5e0!3m2!1svi!2s!4v1533052620774"
+                            width="280" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>                                
+                        </div>  <!-- END MAP-->
+                    </div>
+                </div>
+            </footer>    <!--    END FOOTER   -->
+
+            <div class="footer_bottom clear">
+                <p>DESIGN BY HOÀNG PHONG</p>
+            </div>
+
+        </div>
+    </body>
+    <script type="text/javascript" src="bs.js"></script>
+</html>

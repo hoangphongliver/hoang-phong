@@ -1,0 +1,107 @@
+@media only screen and (max-width : 1224px){
+   html{
+       font-size: 13px;
+   }
+    .nhanthongbao{
+        display: flex;
+        margin-top: 25px;
+        width: 100%;
+        height: 90px;
+        background: #057a45;
+    }
+    .nhanthongbao .nhangmail{
+        display: flex;
+    }
+    .nhanthongbao .nhangmail #p14{
+        margin-top: 5px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .nhanthongbao .nhangmail #p15{
+        font-size: 14px;
+    }
+    .nhanthongbao .nhangmail input[type="text"]{
+        margin: 12px 0 15px 30px;
+        width: 210px;
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 10px;
+        color: #057a45;
+        border: none;
+    }
+    .nhanthongbao .nhangmail select{
+        margin-left: 30px;
+        width: 210px;
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 10px;
+        color: #057a45;
+        border: none;
+    }
+    .nhanthongbao .nhangmail select option{
+        padding-left: 10px;
+    }
+    .nhanthongbao .nhangmail #a20{
+        margin: 20px;
+    }
+    .nhanthongbao .nhangmail a{
+        font-size: 16px;
+        padding: 14px 15px;
+        color:#057a45;
+        background: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+        /*END NHANTHONG BAO*/
+
+
+    /* FOOTTER */
+
+    footer {
+        width: 100%;
+        height: 370px;
+    }
+    footer .footer {
+        display: flex;
+    }
+    footer .footer .mg{
+        margin-top: 30px;
+        width: 210px;
+        margin-left: 15px;
+    }
+    footer .footer p{
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        color: #057a45;
+    }
+    footer .footer ul li a{
+        font-size: 12px;
+    }
+    footer .footer .thanhtoan img{
+        width: 100px;
+        height: 50px;
+    }
+    footer .footer .doitac ul li i{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+}
+
+/*      */
+ 
+
+ /*   */
+
+ @media only screen and (max-width:767px){
+
+}
+
+ /*   */
+
+ @media only screen and (max-width:480px){
+
+}
