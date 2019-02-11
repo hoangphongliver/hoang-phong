@@ -38,7 +38,6 @@ h3{
 /*     TOP      */
 
 .top{
-    width: 100%;
     height: 32px;
     background: #f3f3f3;
     border-top: 1px solid #b6b4b6;
@@ -664,6 +663,7 @@ section .content .content_left .tacgianoibat{
     height: 460px;
     background:#1ba085;
     background-size: 100%;
+    position: relative;
 }
 section .content .content_left .tacgianoibat img{
     width: 200px;
@@ -699,9 +699,33 @@ section .content .content_left .tacgianoibat .infotacgia a{
     color: white;
     font-size: 16px;
 }
-
-
-
+section .content .content_left .tacgianoibat .tacpham{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 30px;
+}
+section .content .content_left .tacgianoibat .tacpham img{
+    width: 105px;
+    height: 150px;    
+    margin-left: 31px;
+}
+section .content .content_left .tacgianoibat #prev{
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.8;
+}
+section .content .content_left .tacgianoibat #next{
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.8;
+}
 /*   REVIEW SÁCH    */
 section .content .content_left #review , .reviewsach{
     margin-top: 31px;
@@ -833,7 +857,6 @@ section .content .content_right .quangcao img{
 .nhanthongbao{
     display: flex;
     margin-top: 25px;
-    width: 100%;
     height: 90px;
     background: #057a45;
 }
@@ -887,7 +910,6 @@ section .content .content_right .quangcao img{
 /* FOOTER */
 
 footer {
-    width: 100%;
     height: 370px;
 }
 footer .footer {
