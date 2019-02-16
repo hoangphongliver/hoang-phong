@@ -526,7 +526,7 @@ section .content .content_left .infoSTD .infosach span{
 }
 section .content .content_left .infoSTD .infosach p{
     padding: 15px 0 10px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px dashed white;
     line-height: 25px;
 }
 section .content .content_left .infoSTD .infosach ul{
@@ -615,7 +615,7 @@ section .content .content_left .sbcnhatnam .sbcl .motasach #p1{
 }
 section .content .content_left .sbcnhatnam .sbcl .motasach #p2{
     padding: 8px 0;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px dashed lightgray;
     line-height: 16px;
 }
 section .content .content_left .sbcnhatnam .sbcl .motasach ul{
@@ -757,7 +757,7 @@ section .content .content_left .review span{
 section .content .content_left .review #p12{
     line-height: 25px;
     padding: 20px 20px 10px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px dashed white;
 }
 section .content .content_left .review ul{
     display: flex;
