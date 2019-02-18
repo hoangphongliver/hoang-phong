@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Book Store</title>
+        <meta charset="utf8">
         <link rel="stylesheet" href="../CSS/bs.css">
         <link rel="stylesheet" href="../CSS/chitietsach.css">
         <link rel="stylesheet" href="../CSS/queries.css">
@@ -118,15 +119,19 @@
                                         </li>
                                         <li><a href="#">Truyện kể trăng nghe</a></li>
                                     </ul>
-                                </div>  <!-- END CHI TIẾT SÁCH - DANH MỤC -->
+                                </div>  <!-- END DANH MỤC -->
 
+                                <!--  CHI TIẾT   -->
                                 <div class="chitiet">
+
+                                    <!-- THÔNG TIN SÁCH -->
                                     <div class="thongtinsach">
                                         <img src="https://vnwriter.net/wp-content/uploads/2016/09/sach-chuyen-ke-trang-nghe.gif" alt="">
                                         <div class="thongtinchitiet">
                                             <h3>Truyện Kể Trăng Nghe</h3>
                                             <p>Tác giả: <a href="#">Shin Kyung Wook</a></p>
                                             <p>Nhà xuất bản: NXB văn hóa - Văn nghệ</p>
+                                            <p>Người dịch: <a href="#">Nguyễn Hiền Thu</a></p>
                                             <p id="p1">Nhà phát hành: <a href="#">Phan Thị</a></p>
                                             <p id="p0">Bận rộn. Vội vàng. Áp lực. Mong muốn nối tiếp kỳ vọng. 
                                                 Kế hoạch này tiếp nối dự án nọ... Căng thẳng. Stress.
@@ -134,27 +139,41 @@
                                                 Bận rộn. Vội vàng. Áp lực. Mong muốn nối tiếp kỳ vọng.
                                                 Kế hoạch này tiếp nối dự án nọ... Căng thẳng.
                                             </p>
-                                            <a id="a0" href="#">Xem Thêm</a>
-                                        </div>
+                                            <a id="a0" href="#p3">Xem Thêm</a>
+                                        </div>   <!-- END THÔNG TIN SÁCH -->
+
+                                        <!-- THANH TOÁN  -->
                                         <div class="thanhtoan">
-                                            <div class="thanhtoan1">
                                                 <p>Thông tin thanh toán</p>
-                                                <p>Giá bán:     <span>90.000đ</span></p>
+                                                <p>Giá bìa:     <span id="sp1">120.000đ</span></p>
+                                                <p>Giá bán:     <span id="sp2">90.000đ</span></p>
+                                                <p>Tiết kiệm:   <span id="sp3">30.000đ (-20%)</span></p>
                                                 
                                                 <p id="p2"><i class="far fa-check-circle"></i>CÓ HÀNG</p>
                                                 <a href="#">
                                                     <i class="fas fa-cart-plus"></i>
                                                     MUA NGAY
                                                 </a>
-                                            </div>
+                                        </div>  <!--  END THANH TOÁN  -->
+
+                                        <div class="service">
+                                            <h4>Thông tin kèm theo</h4>
+                                            <p>
+                                                <i class="far fa-check-circle"></i>
+                                                <span>Miễn phí giao hàng toàn quốc cho Đơn hàng từ 250.000đ (Áp dụng từ 1/2/2015) <a href="#">Xem chi tiết »</a>
+                                                      
+                                                </span>
+                                            </p>
                                         </div>
                                     </div>
+
+                                    <!--  GIOI THIEU SACH -->
                                     <div class="gioithieusach">
                                         <div class="gthieu">
                                             <ul>
                                                 <li><a href="#">GIỚI THIỆU SÁCH</a></li>
-                                                <li><a href="#">THÔNG TIN CHI TIẾT</a></li>
-                                                <li><a href="#">ĐÁNH GIÁ - BÌNH LUẬN</a></li>
+                                                <li><a href="#thongtinchitiet">THÔNG TIN CHI TIẾT</a></li>
+                                                <li><a href="#nhanxet">ĐÁNH GIÁ - BÌNH LUẬN</a></li>
                                             </ul>
                                             <p id="p3">TRUYỆN KỂ TRĂNG NGHE (2018) </p>
                                             <p id="p4">Bỗng ngày nọ, người nhìn ta khẽ nói: </br>
@@ -188,59 +207,133 @@
 
                                                 Mời bạn đón đọc.
                                             </p>
-                                        </div>
+                                        </div>  <!-- END  GIOI THIEU SACH -->
 
-                                        <div class="thongtinchitietsach">
+                                        <!--  THÔNG TIN CHI TIẾT  -->
+                                        <div class="thongtinchitietsach" id="thongtinchitiet">
                                             <h4>THÔNG TIN CHI TIẾT</h4>
-                                            <table id="tb1">
-                                                <tr>
-                                                    <td>Tác giả</td>
-                                                    <td>Nguyễn Thiên Ngân</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tác giả</td>
-                                                    <td>Nguyễn Thiên Ngân</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tác giả</td>
-                                                    <td>Nguyễn Thiên Ngân</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tác giả</td>
-                                                    <td>Nguyễn Thiên Ngân</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tác giả</td>
-                                                    <td>Nguyễn Thiên Ngân</tds>
-                                                </tr>
-
-                                                
-                                            </table>
-                                            <table id="tb2">
+                                            <div class="table">
+                                                <table id="tb1">
                                                     <tr>
-                                                            <td>Tác giả</td>
-                                                            <td>Nguyễn Thiên Ngân</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tác giả</td>
-                                                            <td>Nguyễn Thiên Ngân</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tác giả</td>
-                                                            <td>Nguyễn Thiên Ngân</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tác giả</td>
-                                                            <td>Nguyễn Thiên Ngân</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tác giả</td>
-                                                            <td>Nguyễn Thiên Ngân</tds>
-                                                        </tr>
-                                            </table>
-                                        </div>
+                                                        <td>Tác giả: </td>
+                                                        <td>Nguyễn Thiên Ngân</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nhà xuất bản: </td>
+                                                        <td>Nhà xuất bản lao dộng</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mã sản phẩm:</td>
+                                                        <td>100078945621</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ngôn ngữ:</td>
+                                                        <td>Tiếng Việt</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước:</td>
+                                                        <td>13 x 23 (cm):</tds>
+                                                    </tr>
+    
+                                                    
+                                                </table>
+                                                <table id="tb2">
+                                                    <tr>
+                                                        <td>Người dịch:</td>
+                                                        <td>Phạm Hồng Nhung</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nhà phát hành:</td>
+                                                        <td>Phan Thị</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khối lượng:</td>
+                                                        <td>264 gram</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Định dạng:</td>
+                                                        <td>Bìa mềm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ngày phát hành:</td>
+                                                        <td>12/2018</tds>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>  <!-- END THÔNG TIN CHI TIẾT  -->
                                     </div>
                                 </div>
+
+                                
+                                <h3>Nhận xét từ khách hàng</h3>
+
+                                <!-- NHẬN XÉT KHÁCH HÀNG -->
+                                <div class="nhanxet" id="nhanxet">
+                                    <div class="danhgia mg">
+                                        <div class="danhgiatb">
+                                            <p>Đánh giá trung bình</p>
+                                            <p>(10 - Người đánh giá)</p>
+                                            <p>7,5</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <span>5</span>
+                                                <i class="fas fa-star"></i>
+                                                <span>5</span>
+                                            </li>
+                                            <li>
+                                                <span>4</span>
+                                                <i class="fas fa-star"></i>
+                                                <span>10</span>
+                                            </li>
+                                            <li>
+                                                <span>3</span>
+                                                <i class="fas fa-star"></i>
+                                                <span>5</span>
+                                            </li>
+                                            <li>
+                                                <span>2</span>
+                                                <i class="fas fa-star"></i>
+                                                <span>0</span>
+                                            </li>
+                                            <li>
+                                                <span>1</span>
+                                                <i class="fas fa-star"></i>
+                                                <span>0</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="noidung mg">
+                                        <li>
+                                            <span>1</span>
+                                            <span>Đánh giá</span> 
+                                        </li>
+                                        <li>
+                                            <span>2</span>
+                                            <span>Tiêu đề</span>
+                                        </li>
+                                        <li>
+                                            <span>3</span>
+                                            <span>Nội dung</span>
+                                        </li>
+                                    </div>
+                                    <div class="guidanhgia mg">
+                                        <ul>
+                                            <li><a href="#"><i id="i1" class="fas fa-star"></i></a></li>
+                                            <li><a href="#"><i id="i2" class="fas fa-star"></i></a></li>
+                                            <li><a href="#"><i id="i3" class="fas fa-star"></i></a></li>
+                                            <li><a href="#"><i id="i4" class="fas fa-star"></i></a></li>
+                                            <li><a href="#"><i id="i5" class="fas fa-star"></i></a></li>
+                                        </ul>
+                                        <input type="text">
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        <p><a href="#">GỬI ĐÁNH GIÁ</a></p>
+                                    </div>
+                                </div> <!-- END NHẬN XÉT KHÁCH HÀNG -->
+
+                                <h3>Bình luận từ FACEBOOK (0)</h3>
+                                <div id="fb-root"></div>
+                                <div class="fb-comments" data-href="http://localhost/webbansach/index.php" data-width="600px" data-numposts="3"></div>
                             </div>
                         </div>
                     </section>  <!--  END CHI TIẾT SÁCH  -->
