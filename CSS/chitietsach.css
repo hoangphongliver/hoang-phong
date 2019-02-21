@@ -176,9 +176,13 @@ section .chitietsach .chitiet .thongtinsach .like #al1:hover #i10{
 section .chitietsach .chitiet .thongtinsach .like #al2:hover #i11{
     color:#057a45;
 }
-
+section .chitietsach .chitiet .gioithieusach{
+    height: 850px;
+}
 section .chitietsach .chitiet .gioithieusach .gthieu{
     height: auto;
+    min-height: 600px;
+    max-height: 800px;
 }
 section .chitietsach .chitiet .gioithieusach .gthieu ul{
     display: flex;
@@ -269,7 +273,7 @@ section .chitietsach .nhanxet .danhgia .danhgiatb p:last-child{
     font-size: 30px;
 }
 section .chitietsach .nhanxet .danhgia ul{
-    margin: 20px 30px 0 30px;
+    margin: 30px 30px 0 30px;
 }
 section .chitietsach .nhanxet .danhgia {
     display: flex;
@@ -281,13 +285,27 @@ section .chitietsach .nhanxet .danhgia ul li span{
     color: black;
 }
 section .chitietsach .nhanxet .danhgia ul li span:last-child{
-    margin-left: 30px;
+    margin-left: 120px;
 }
 section .chitietsach .nhanxet .danhgia ul li i{
     font-size: 10px;
     margin-top: 4px;
     margin-left: 3px;
     color: gold;
+    position: relative;
+}
+section .chitietsach .nhanxet .danhgia ul li i::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    border: 1px solid gray;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    border-radius: 1px;
+    
 }
 section .chitietsach .noidung{
     width: 100px;
@@ -308,9 +326,19 @@ section .chitietsach .noidung li span:first-child{
 }
 section .chitietsach .nhanxet .guidanhgia{
     margin-left: 30px;
+    position: relative;
 }
 section .chitietsach .nhanxet .guidanhgia ul{
     display: flex;
+}
+section .chitietsach .nhanxet .guidanhgia #ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .chitietsach .nhanxet .guidanhgia #ul i{
+    color: gold;
+    display: none;
 }
 section .chitietsach .nhanxet .guidanhgia i{
     font-size: 16px;

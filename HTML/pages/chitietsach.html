@@ -28,7 +28,7 @@
                     <!-- THÔNG TIN SÁCH -->
                     <div class="thongtinsach">
                         <div id="img"></div>
-                        <div class="thongtinchitiet" id="thongtinchitiet">
+                        <div class="thongtinchitiet" id="ttchitiet">
                             <!--
                             <h3>Truyện Kể Trăng Nghe</h3>
                             <p>Tác giả: <a href="#">Shin Kyung Wook</a></p>
@@ -75,8 +75,10 @@
                                 <li><a href="#thongtinchitiet">THÔNG TIN CHI TIẾT</a></li>
                                 <li><a href="#nhanxet">ĐÁNH GIÁ - BÌNH LUẬN</a></li>
                             </ul>
-                            <p id="p3">TRUYỆN KỂ TRĂNG NGHE (2018) </p>
-                            <p id="p4">Bỗng ngày nọ, người nhìn ta khẽ nói: </br>
+                            <p id="p3"></p>
+                            <p id="p4"></p>
+                            <!--
+                                <p id="p4">Bỗng ngày nọ, người nhìn ta khẽ nói: </br>
 
                                 "Những diệu kỳ nằm ở phía xa khơi" </br>
                                 
@@ -107,6 +109,7 @@
 
                                 Mời bạn đón đọc.
                             </p>
+                            -->
                         </div>  <!-- END  GIOI THIEU SACH -->
 
                         <!--  THÔNG TIN CHI TIẾT  -->
@@ -116,7 +119,7 @@
                                 <table id="tb1">
                                     <tr>
                                         <td>Tác giả: </td>
-                                        <td>Nguyễn Thiên Ngân</td>
+                                        <td id="tacgia" style="color: forestgreen"></td>
                                     </tr>
                                     <tr>
                                         <td>Nhà xuất bản: </td>
@@ -219,11 +222,18 @@
                     </div>
                     <div class="guidanhgia">
                         <ul>
-                            <li><a href="#"><i id="i1" class="fas fa-star"></i></a></li>
-                            <li><a href="#"><i id="i2" class="fas fa-star"></i></a></li>
-                            <li><a href="#"><i id="i3" class="fas fa-star"></i></a></li>
-                            <li><a href="#"><i id="i4" class="fas fa-star"></i></a></li>
-                            <li><a href="#"><i id="i5" class="fas fa-star"></i></a></li>
+                            <li><i id="i1" class="fas fa-star" onclick="style_i1()"  onmouseover="style_i1()"></i></li>
+                            <li><i id="i2" class="fas fa-star" onclick="style_i2()"  onmouseover="style_i2()"></i></li>
+                            <li><i id="i3" class="fas fa-star" onclick="style_i3()"  onmouseover="style_i3()"></i></li>
+                            <li><i id="i4" class="fas fa-star" onclick="style_i4()"  onmouseover="style_i4()"></i></li>
+                            <li><i id="i5" class="fas fa-star" onclick="style_i5()"  onmouseover="style_i5()"></i></li>
+                        </ul>
+                        <ul id="ul">
+                            <li><i id="i6" class="fas fa-star" onclick="style_i6()" onmouseover="style_i6()"></i></li>
+                            <li><i id="i7" class="fas fa-star" onclick="style_i7()" onmouseover="style_i7()"></i></li>
+                            <li><i id="i8" class="fas fa-star" onclick="style_i8()" onmouseover="style_i8()"></i></li>
+                            <li><i id="i9" class="fas fa-star" onclick="style_i9()" onmouseover="style_i9()"></i></li>
+                            <li><i id="i100" class="fas fa-star"onclick="style_i10()" onmouseover="style_i10()"></i></li>
                         </ul>
                         <input type="text">
                         <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -238,4 +248,42 @@
         </div>
 </section>  <!--  END CHI TIẾT SÁCH  -->
 
+<script>
+     function style_i1(){
+         document.getElementById('i6').style.display ="block";
+     }
+     function style_i2(){
+         document.getElementById('i7').style.display ="block";
+         style_i1();
+     }
+     function style_i3(){
+         style_i2();
+         document.getElementById('i8').style.display="block";
+     }
+     function style_i4(){
+         style_i3();
+         document.getElementById('i9').style.display = "block";
+     }
+     function style_i5(){
+         style_i4();
+         document.getElementById('i100').style.display = "block";
+         
+     }
 
+    function style_i6(){
+        document.getElementById('i7').style.display = "none";
+        style_i7();
+    }
+    function style_i7(){
+        document.getElementById('i8').style.display = "none";
+        style_i8();
+    }
+    function style_i8(){
+        document.getElementById('i9').style.display = "none";
+        document.getElementById('i100').style.display = "none";
+    }
+    function style_i9(){
+        document.getElementById('i100').style.display = "none";
+    }
+
+</script>

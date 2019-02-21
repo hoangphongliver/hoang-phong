@@ -8,7 +8,7 @@ function getParam(key,value_Default =''){
 
         var id = getParam("id");
         var http = new XMLHttpRequest();
-        http.open('GET','https://api.myjson.com/bins/mfrlm',true);
+        http.open('GET','https://api.myjson.com/bins/ok3aa',true);
         http.send();
         http.onreadystatechange = function(){
             if(this.readyState==4){
@@ -30,11 +30,11 @@ function getParam(key,value_Default =''){
                         html += '<p id="p1">Nhà phát hành:';
                             html += '<a href="#">Phan Thị' + '</a>';
                         html += '</p>';
-                        html += '<p id="p0">' + book.noidung + '</p>';
+                        html += '<p id="p0">' + book.noidungphu + '</p>';
                         html += '</p>';
                         html += '<a id="a0" href="#p3">Xem Thêm' + '</a>';
                        }
-                       document.getElementById('thongtinchitiet').innerHTML = html;
+                       document.getElementById('ttchitiet').innerHTML = html;
                     }
                 
                     var html1= '';
@@ -44,6 +44,8 @@ function getParam(key,value_Default =''){
                         }
                         document.getElementById("img").innerHTML =html1;
                     }
+
+
                     var html2 = '';
                     for(let book of books){
                         if(id==book.id){
@@ -69,6 +71,24 @@ function getParam(key,value_Default =''){
                                 html2 += '<i class="fas fa-cart-plus">' + '</i>';
                             html2 += 'MUA NGAY</a>';
                         }
-                        document.getElementById("thanhtoan").innerHTML =html2;
+                             document.getElementById("thanhtoan").innerHTML =html2;
                     }
-        }
+                    var html4 ='';
+                    var html3 ='';
+                    var tacgia = '';
+                    for(let book of books){
+                        if(id==book.id){
+                            html3 += book.name;
+                            html4 +=book.noidung;
+                            tacgia += book.tacgia;
+                        }
+                       // document.getElementById('p4').innerHTML = html3;
+                        document.getElementById('p3').innerHTML = html3;
+                        document.getElementById('p4').innerHTML = html4;
+                        document.getElementById('tacgia').innerHTML = tacgia;
+
+                    } 
+
+             }
+            
+        
