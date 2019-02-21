@@ -758,7 +758,6 @@ section .content .content_left .review #p12{
     line-height: 25px;
     padding: 20px 20px 10px 0;
     border-bottom: 1px dashed white;
-    color: white;
 }
 section .content .content_left .review ul{
     display: flex;
@@ -868,7 +867,6 @@ section .content .content_right .quangcao img{
     margin-top: 7px;
     font-size: 22px;
     font-weight: bold;
-    color: white;
 }
 .nhanthongbao .nhangmail #p15{
     font-size: 14px;
