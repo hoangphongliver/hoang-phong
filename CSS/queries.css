@@ -2,6 +2,9 @@
    html{
        font-size: 13px;
    }
+    .cangiua{
+        width: 100%;
+    }
     .nhanthongbao{
         display: flex;
         margin-top: 25px;

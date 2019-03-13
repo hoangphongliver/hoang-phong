@@ -27,7 +27,7 @@ li{
 }
 .cangiua{
     width: 1200px;
-    margin: auto;    
+    margin: 0 auto;    
 }
 
 h3{
@@ -38,6 +38,7 @@ h3{
 /*     TOP      */
 
 .top{
+    width: 100%;
     height: 32px;
     background: #f3f3f3;
     border-top: 1px solid #b6b4b6;
@@ -92,7 +93,7 @@ header .form{
     position: relative;
 }
 header .form input[type="text"]{
-    width: 550px;
+    width: 525px;
     height: 34px;
     border: 1px solid #cccccc;
     border-radius: 20px;
@@ -116,15 +117,24 @@ header .form a{
     top: 5px;
     color: white;
 }
-header .cart i{
+header .cart a{
+    position: relative;
+}
+header .cart a i{
     position: absolute;
-    right: 200px;
+    left: 35px;
     top: 20px;
     font-size: 25px;
     color: #057a45;
     padding: 12px 11px 10px 8px;
     border: 1px solid #057a45;
     border-radius: 100%;
+}
+header .cart a i span{
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    color: #057a45;
 }
 header .cart i:hover{
     background: #057a45;
@@ -133,63 +143,91 @@ header .cart i:hover{
 header .login{
     position: relative;
 }
-header .login .formdangnhap{
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    z-index: 9999;
-    top: 350px;
-    left: 50%;
-    background:white;
-    border-radius: 10px;
-    border: 2px solid white;
-    transform: translate(-50%,-50%);
+header .login .formdn{
     display: none;
 }
-header .login .formdangnhap span{
+header .login .formdn form{
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    background: white;
+    width: 600px;
+    height: 420px;
+    z-index: 9999;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+header .login .formdn form #pdn{
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+    background:#057a45;
+    border-radius: 5px 5px 0 0;
+}
+header .login .formdn form table{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+header .login .formdn form table td{
+    padding: 8px;
     color: #057a45;
 }
-header .login .formdangnhap #span1{
-    margin-left: 50px;
+header .login .formdn form table input[type="text"], input[type="password"]{
+    width: 280px;
+    height: 33px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 5px;
+    border: 1px solid skyblue;
 }
-
-header .login .formdangnhap .textbox{
-    margin-left: 100px;
-    margin-top: 20px;
-}
-header .login .formdangnhap .textbox input{
-    padding: 8px 0;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #b6b4b6;
-    outline: none;
-}
-header .login .formdangnhap .textbox::before{
-    content: "Tài Khoản:";
-}
-header .login .formdangnhap .tb2::before{
-    content: "Mật Khẩu : ";
-}
-header .login .formdangnhap input[type="checkbox"]{
+header .login .formdn form>ul{
+    margin-left: 200px;
     margin-top: 10px;
-    margin-left: 160px;
+    margin-bottom: 40px;
 }
-header .login .formdangnhap input[type="button"]{
-    margin-left: 250px;
-    margin-top: 20px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #b6b4b6;
+header .login .formdn form>ul span{
+    margin-left: 40px;
+    color: black;
+}
+header .login .formdn form>ul input[type="checkbox"]{
+    font-size: 15px;
+}
+header .login .formdn form>a{
+    margin-left: 200px;
+    padding: 12px 15px;
     background: #057a45;
     color: white;
-    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
-header .login .formdangnhap p{
-    background: #057a45;
-    padding: 10px 0;
-    border-radius: 7px;
-    text-align: center;
-    font-size: 18px;
+header .login .formdn form #pdk{
+    margin-top: 30px;
+    color: black;
+    margin-left: 200px;
+}
+header .login .formdn form #pdk>a{
+    color: #057a45;
+}
+header .login .formdn .or{
+    margin-top: 18px;
+    height: 100px;
+    width: 100%;
+    background: darkgray;
+}
+header .login .formdn .or p{
+    margin: 0px 0 0 100px;
+}
+header .login .formdn .or a{
+    padding: 10px;
+    background: deepskyblue;
+    margin: 30px 10px 0 100px;
+    border-radius: 3px;
+}
+header .login .formdn .or i{
+    margin-top: 30px;
+    color: white;
+    padding-right: 10px;
 }
 header .login ul li{
     float: right;

@@ -36,13 +36,12 @@ section .chitietsach .chitiet .thongtinsach{
     display: flex;
     position: relative;
 }
-section .chitietsach .chitiet .thongtinsach img{
-    width: 200px;
-    height: 280px;
-    margin: 20px 30px 0 10px;
+section .chitietsach .chitiet .thongtinsach .img_book{
+    width: 15%;
+    margin: 20px;
 }
 section .chitietsach .chitiet .thongtinsach .thongtinchitiet{
-    width: 500px;
+    width: 48%;
 }
 section .chitietsach .chitiet .thongtinsach .thongtinchitiet p{
     margin-top: 10px;
@@ -68,8 +67,8 @@ section .chitietsach .chitiet .thongtinsach .thongtinchitiet #a0{
     transition: 1s;
 }
 section .chitietsach .chitiet .thongtinsach .thanhtoan{
-    width: 280px;
-    height: 320px;
+    width: 24%;
+    height: 64%;
     border: 3px solid darkgray;
     margin: 10px 0 0 100px;
     border-radius: 10px;

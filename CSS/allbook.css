@@ -1,0 +1,200 @@
+.tittle{
+    display: flex;
+    margin: 20px;
+}
+.p_magin{
+    margin: 7px;
+}
+.tittle i{
+    font-size: 15px;
+    color: gray;
+    margin-top: 2px;
+}
+.tittle p{
+    margin: 5px;
+    color: black;
+}
+.tittle a{
+    color: black;
+}
+.search_content{
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+/*  CATEGORY   */
+.search_content .category {
+    width: 24%;
+    height: auto;
+    border: 1px solid gainsboro;
+    border-radius: .3rem;
+}
+.search_content .category .promotion ul li{
+    padding: 11px;
+    border-bottom: 1px dashed gainsboro;
+    color: black
+}
+.search_content .category .promotion ul li:hover{
+    background: mediumaquamarine;
+    color: white;
+}
+.search_content .category .promotion a{
+    font-weight: bold;
+    color: black;
+}
+.search_content .category .p_cy{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 1rem 4rem;
+    border-bottom: 1px dashed gainsboro;
+}
+.search_content .category .all_category ul li{
+    padding: .8rem 1rem;
+    border-bottom: 1px dashed gainsboro;
+    color: black;
+    font-size: 1.05em;
+}
+.search_content .category .all_category ul li:hover, li:hover a{
+    background: mediumaquamarine;
+    color: white;
+}
+.search_content .category .all_category ul li a{
+    font-size: 1em;
+}
+.search_content .category .nhaphathanh #li_last{
+    border-bottom: 5px solid darkgrey;
+    border-radius: .3rem;
+}
+/*  END CATEGORY  */
+
+
+/* BOOK_CATEGORY */
+.search_content .book_category{
+    width: 75%;
+    height: auto;
+    margin-left: .5rem;
+}
+.search_content .book_category h3{
+    margin-top: 20px;
+    border-bottom: 1px dashed gray;
+    margin-left: 5px;
+}
+.search_content .book_category p{
+    color: black;
+}
+.search_content .book_category .searchbook{
+    margin: 1rem 0 1rem 40.5rem;
+}
+.search_content .book_category .searchbook .select{
+    width: 15rem;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    padding-left: .3rem;
+}
+.search_content .book_category .searchbook .select>option{
+    padding: 10px;
+    margin: 10px;
+}
+.search_content .book_category .book{
+    margin: 1rem 0.7rem 1.5rem 1.1rem;
+    width: 150px;
+    height: 350px;
+    position: relative;
+}
+.search_content .book_category .book img{
+    width: 100%;
+    height: 63%;
+    border-radius: .2rem;
+}
+.search_content .book_category .book #pb_1 a{
+    padding: 8px 4px;
+    background: tomato;
+    border-radius: 3px;
+    position: absolute;
+    top: 205px;
+    right: -10px;
+    color: white;
+}
+.search_content .book_category .book #pb_2{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.search_content .book_category .book #pb_3{
+    font-size: 11px;
+    color: gray;
+}
+.search_content .book_category .book #pb_4{
+    text-decoration: line-through;
+}
+.search_content .book_category .book #pb_5{
+    color: crimson;
+    font-size: 14px;
+}
+.search_content .book_category .book:hover  .hover p{
+    color: mediumseagreen;
+}
+.search_content .book_category .book:hover  .hover #pb_2>a{
+    color: mediumseagreen;
+}
+.search_content .book_category .book:hover  .hover #pb_3{
+    color: mediumseagreen;
+}
+.search_content .book_category .book:hover  .hover #pb_5{
+    color: mediumseagreen;
+}
+.search_content .book_category .book:hover img{
+    box-shadow: mediumseagreen 2px 2px 2px;
+}
+.search_content .book_category .books_category{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* PHAN TRANG */
+.search_content .phantrang{
+    width: 99%;
+    padding-top: 25px;
+    margin-top: 20px;
+    border-top: 1px dashed gray;
+    margin-left: 5px;
+}
+.search_content .phantrang .phantrang1{
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+.search_content .phantrang .phantrang1 p{
+    font-size: 14px;
+    margin-top: 1px;
+    color: gray;
+}
+.search_content .phantrang .phantrang1 span{
+    color: gray;
+}
+.search_content .phantrang .phantrang1 ul{
+    display: flex;
+    margin-left: 10px;
+}
+.search_content .phantrang .phantrang1 ul li{
+    margin-left: 5px;
+}
+.search_content .phantrang .phantrang1 ul li a{
+    font-size: 15px;
+    padding: 5px 10px;
+    background: darkgray;
+    border-radius: 0.2rem;
+    color: white;
+}
+.search_content .phantrang .phantrang1 ul>li> #a_pt1{
+    background: mediumseagreen;
+}
+.search_content .phantrang .phantrang1 ul li a:hover{
+    background: mediumseagreen;
+    color: white;
+}
+/* END BOOK_CATEGORY */
